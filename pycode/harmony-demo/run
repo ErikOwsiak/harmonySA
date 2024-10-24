@@ -1,0 +1,48 @@
+#!/usr/bin/env python3
+
+import os, pandas as pd
+from core.xlsOps import xlsOps
+from core.datatypes import *
+
+
+DATA_XLS: str = "data/example.xlsx"
+if not os.path.exists(DATA_XLS):
+   print(f"FileNotFound: {DATA_XLS}")
+   exit(1)
+
+xlsops: xlsOps = xlsOps(DATA_XLS)
+if not xlsops.load():
+   print(f"UnableToLoadXlsData: {DATA_XLS}")
+   exit(1)
+
+
+MAIN_SHEET: str = "bricklayer"
+SUB_SHEET_1: str = "helper1"
+SUB_SHEET_2: str = "helper2"
+HDR_IDX: int = 2
+
+
+dftmp: pd.DataFrame = pd.read_excel(DATA_XLS, sheet_name=MAIN_SHEET, header=HDR_IDX)
+MAIN_SHEET_DF: xlsSheedDataFrame = xlsSheedDataFrame(dftmp, MAIN_SHEET)
+
+dftmp: pd.DataFrame = pd.read_excel(DATA_XLS, sheet_name=SUB_SHEET_1, header=HDR_IDX)
+SUB_DF_1: xlsSheedDataFrame = xlsSheedDataFrame(dftmp, SUB_SHEET_1)
+
+dftmp: pd.DataFrame = pd.read_excel(DATA_XLS, sheet_name=SUB_SHEET_2, header=HDR_IDX)
+SUB_DF_2: xlsSheedDataFrame = xlsSheedDataFrame(dftmp, SUB_SHEET_2)
+
+
+def dump_sheets(sheets: ()):
+   for df in sheets:
+      df: xlsSheedDataFrame = df
+      print(f"\n\n[ SheetName: {df.sheet_name} ]")
+      print(df.df)
+
+
+def main():
+   dump_sheets((MAIN_SHEET_DF, SUB_DF_1, SUB_DF_2))
+
+
+# -- -- entry point -- --
+if __name__ == "__main__":
+    main()

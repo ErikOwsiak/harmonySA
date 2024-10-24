@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="cab07a61-fe8f-4c1a-8cf5-5aa46aebc3a6" name="Changes" comment="" />
+    <list default="true" id="cab07a61-fe8f-4c1a-8cf5-5aa46aebc3a6" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/core/datatypes.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/xlsOps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/.~lock.example.xlsx#" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/example.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,17 +42,28 @@
   "associatedIndex": 0
 }]]></component>
   <component name="ProjectId" id="2nqvwNRjct3LdBvbEF8k9je1aK4" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Python._optional.executor": "Debug",
+    "Python.run.executor": "Debug",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/data" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -61,5 +81,19 @@
       <updated>1729713657872</updated>
     </task>
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/run</url>
+          <line>47</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
