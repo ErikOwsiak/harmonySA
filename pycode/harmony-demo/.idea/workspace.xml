@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cab07a61-fe8f-4c1a-8cf5-5aa46aebc3a6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/core/datatypes.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/xlsOps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/.~lock.example.xlsx#" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/example.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/.~lock.example.xlsx#" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
